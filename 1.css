@@ -1,0 +1,89 @@
+section{
+    display:flex;
+    justify-content: center; 
+
+align-content: center;
+align-items: center;
+min-height: 500px;
+color:white;
+
+}
+body{
+    background: rgb(0,0,0);
+}
+#naveen{
+    text-align:center;
+    font-size:80px;
+    position:relative;
+    color:red;
+}
+#naveen:after{
+    content: "%";
+    font-size:50px;
+}
+.naveen{
+    width:400px;
+    height:30px;
+    position: relative;
+    appearance: none;
+    outline:none;
+    
+
+    border-radius: 30px;
+    overflow: hidden;
+
+}
+.naveen::-webkit-slider-thumb{
+    appearance: none;
+    width:30px;
+    height:20px;
+    background:red;
+    border:20px solid black;
+    border-radius:20px;
+    cursor: pointer;
+    box-shadow:  -415px 0 0 400px red ;
+} 
+#fillRangeTopLeft{
+
+    position:fixed;
+    top:0;
+    left:0;
+    height:50%;
+    width:50%;
+    box-shadow: 0 -5px 15px red;
+    pointer-events: none;
+    backdrop-filter: blur(15px);
+
+
+}
+#fillright{
+position:fixed;
+top:0;
+right:0;
+height:50%;
+width:50%;
+box-shadow: 0 -5px 15px red;
+pointer-event:none;
+backdrop-filter: blur(15px);
+
+
+}
+#fillbottomleft{
+    position:fixed;
+    bottom:0;
+    left:0;
+    height:50%;
+    width:50%;
+    box-shadow: 0 -5px 15px red;
+    backdrop-filter: blur(15px);
+
+}
+#fillbottomright{   
+    position:fixed;
+    bottom:0;
+    right:0;
+    height:50%;
+    width:50%;
+    box-shadow: 0 -5px 15px red;
+    backdrop-filter: blur(15px);
+}
